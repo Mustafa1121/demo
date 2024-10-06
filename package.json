@@ -1,6 +1,6 @@
 {
-  "name": "shared-component",
-  "version": "0.0.2",
+  "name": "@mustafa1121/shared-component",
+  "version": "0.0.3",
   "type": "module",
   "files": [
     "dist"
@@ -26,6 +26,7 @@
     "release": "npm run build && standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
+    "@mustafa1121/shared-component": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "shared-component": "file:",
