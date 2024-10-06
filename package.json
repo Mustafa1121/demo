@@ -1,6 +1,6 @@
 {
   "name": "shared-component",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
@@ -14,16 +14,22 @@
       "require": "./dist/demo.umd.cjs"
     }
   },
+  "repository": {
+    "url": "https://github.com/Mustafa1121/demo",
+    "type": "git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "npm run build && standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "shared-component": "file:",
+    "standard-version": "^9.5.0",
     "vite-plugin-dts": "^4.2.3"
   },
   "devDependencies": {
