@@ -1,11 +1,11 @@
 {
   "name": "@mustafa1121/shared-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "files": [
     "dist"
   ],
-  "types": "./dist/demo.d.ts",
+  "types": "./dist/index.d.ts",
   "main": "./dist/demo.umd.cjs",
   "module": "./dist/demo.js",
   "exports": {
