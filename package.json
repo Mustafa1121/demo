@@ -1,6 +1,6 @@
 {
   "name": "@mustafa1121/shared-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "files": [
     "dist"
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "rimraf dist && tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "release": "npm run build && standard-version && git push --follow-tags && npm publish"
@@ -30,6 +30,7 @@
     "@rollup/plugin-typescript": "^12.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1",
     "shared-component": "file:",
     "standard-version": "^9.5.0",
     "tslib": "^2.7.0",
